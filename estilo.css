@@ -1,0 +1,81 @@
+*{
+    font-family: 'Gloock', serif;
+    font-size: 14px;
+}
+body{
+    background-color: #222422;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2a2b2a;
+    padding: 20px;
+    justify-content: center;
+    margin: 50px 100px;
+    max-width: 1000px;
+}
+.form{
+    text-align: center;
+    flex: 1;
+    padding: 40px;
+    min-width: 300px;
+    max-width: 690px;
+    order: 5;
+}
+.form__input{
+    width: 100%;
+    margin: 7px;
+    padding: 7px;
+    border: none;
+    border-bottom: solid #10842d;
+    background-color: transparent;
+    color: #f0f5f1;
+}
+.form__input:focus{
+    background: linear-gradient(to bottom, transparent, #222);
+    border-bottom: solid #0c6322;
+    outline: none;
+    color: #f0f5f1;
+}
+.form textarea{
+    min-height: 150px;
+    resize: none;
+}
+.form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 400px;
+    order: 2;
+}
+.img-container{
+    margin: auto;
+}
+.img-container div{
+    padding: 40px;
+    text-align: center;
+    min-width: 290px;
+    max-width: 600px;
+}
+.form-img img{
+    width: 300px;
+}
+#btnEnviar{
+    background-color: #0c6322;
+    border-bottom: none;
+    padding: 12px;
+}
+#btnEnviar:hover{
+    background-color: #10842d;
+    border-bottom: none;
+    padding: 12px;
+}
+#btnEnviar:focus{
+    background: #0c6322;
+}
+#btnEnviar:active{
+    background: linear-gradient(to bottom, #0c6322, #10842d);
+}
